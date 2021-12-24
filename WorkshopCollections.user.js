@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Workshop Collections Mass Add
 // @namespace    http://social.grimtech.co.uk
-// @version      0.2
+// @version      0.3
 // @description  A quick and simple script to mass add your subscribed items into a collection
 // @author       PatrickJr / kluvo2
 // @match        https://steamcommunity.com/sharedfiles/managecollection*
@@ -15,32 +15,33 @@ setTimeout(function(){
     var collection_window = document.querySelector('div.collectionAddItemsSection')
     collection_window.insertBefore(btn_add,collection_window.firstChild);
     btn_add.setAttribute('id','ASCM_addall');
-    jQuery('button#ASCM_addall').html('+')
+    jQuery('button#ASCM_addall').html('Add All')
     btn_add.style.position = 'absolute';
-    btn_add.style.top = '110px';
-    btn_add.style.right = '50px';
-    btn_add.style['border-radius'] = '10px';
-    btn_add.style.color = 'white';
-    btn_add.style['font-size'] = '40px';
-    btn_add.style.background = '#00c417';
-    btn_add.style.width = '60px';
-    btn_add.style.height = '60px';
+    btn_add.style.top = '116px';
+    btn_add.style.right = '120px';
+	btn_add.border = 'linear-gradient( to bottom, rgba(47,137,188,1) 5%, rgba(23,67,92,1) 95%)';
+    btn_add.style['border-radius'] = '2px';
+    btn_add.style.color = '#A4D7F5';
+    btn_add.style['font-size'] = 'inherit';
+    btn_add.style.background = 'linear-gradient( to bottom, rgba(47,137,188,1) 5%, rgba(23,67,92,1) 95%)';
+    btn_add.style.width = 'auto';
+    btn_add.style.height = 'auto';
     btn_add.style['text-decoration'] = 'none';
     // Create "Remove" button
     var btn_rem = document.createElement("BUTTON");
     var collection_window = document.querySelector('div.collectionAddItemsSection')
     collection_window.insertBefore(btn_rem ,collection_window.firstChild);
     btn_rem .setAttribute('id','ASCM_removeall');
-    jQuery('button#ASCM_removeall').html('-')
+    jQuery('button#ASCM_removeall').html('Remove All')
     btn_rem.style.position = 'absolute';
-    btn_rem.style.top = '110px';
-    btn_rem.style.right = '120px';
-    btn_rem.style['border-radius'] = '10px';
-    btn_rem.style.color = 'white';
-    btn_rem.style['font-size'] = '40px';
-    btn_rem.style.background = '#c20000';
-    btn_rem.style.width = '60px';
-    btn_rem.style.height = '60px';
+	btn_rem.style.top = '116px';
+    btn_rem.style.right = '35px';
+    btn_rem.style['border-radius'] = '2px';
+    btn_rem.style.color = '#A4D7F5';
+    btn_rem.style['font-size'] = 'inherit';
+    btn_rem.style.background = 'linear-gradient( to bottom, rgba(47,137,188,1) 5%, rgba(23,67,92,1) 95%)';
+    btn_rem.style.width = 'auto';
+    btn_rem.style.height = 'auto';
     btn_rem.style['text-decoration'] = 'none';
     // Bind "Add" button
     jQuery('button#ASCM_addall').click(function(){
