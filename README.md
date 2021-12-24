@@ -3,6 +3,7 @@ A script to make adding workshop items to collections easier.
 
 # Installation
 Be sure to have Tampermonkey or greasemonkey and click https://github.com/PatrickJnr/WorkshopCollections/raw/main/WorkshopCollections.user.js
+I've only tested this in Chrome.
 
 # How do I use this script?
 1. Start creating a new collection
