@@ -1,8 +1,8 @@
 // ==UserScript==
-// @name         Workshop Collections Multi Add
+// @name         Workshop Collections Mass Add
 // @namespace    http://social.grimtech.co.uk
-// @version      0.1
-// @description  try to take over the world!
+// @version      0.2
+// @description  A quick and simple script to mass add your subscribed items into a collection
 // @author       PatrickJr / kluvo2
 // @match        https://steamcommunity.com/sharedfiles/managecollection*
 // @icon         https://steamworkshopdownloader.io/android-icon-192x192.png
