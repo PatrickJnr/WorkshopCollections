@@ -1,11 +1,13 @@
 // ==UserScript==
 // @name         Workshop Collections Mass Add
 // @namespace    http://social.grimtech.co.uk
-// @version      0.3
+// @version      0.4
 // @description  A quick and simple script to mass add your subscribed items into a collection
 // @author       PatrickJr / kluvo2
 // @match        https://steamcommunity.com/sharedfiles/managecollection*
 // @icon         https://steamworkshopdownloader.io/android-icon-192x192.png
+// @downloadURL  https://raw.githubusercontent.com/PatrickJnr/WorkshopCollections/main/WorkshopCollections.user.js
+// @updateURL    https://raw.githubusercontent.com/PatrickJnr/WorkshopCollections/main/WorkshopCollections.user.js
 // @grant        none
 // ==/UserScript==
 
@@ -19,7 +21,7 @@ setTimeout(function(){
     btn_add.style.position = 'absolute';
     btn_add.style.top = '116px';
     btn_add.style.right = '120px';
-	btn_add.border = 'linear-gradient( to bottom, rgba(47,137,188,1) 5%, rgba(23,67,92,1) 95%)';
+    btn_add.border = 'linear-gradient( to bottom, rgba(47,137,188,1) 5%, rgba(23,67,92,1) 95%)';
     btn_add.style['border-radius'] = '2px';
     btn_add.style.color = '#A4D7F5';
     btn_add.style['font-size'] = 'inherit';
@@ -34,7 +36,7 @@ setTimeout(function(){
     btn_rem .setAttribute('id','ASCM_removeall');
     jQuery('button#ASCM_removeall').html('Remove All')
     btn_rem.style.position = 'absolute';
-	btn_rem.style.top = '116px';
+    btn_rem.style.top = '116px';
     btn_rem.style.right = '35px';
     btn_rem.style['border-radius'] = '2px';
     btn_rem.style.color = '#A4D7F5';
